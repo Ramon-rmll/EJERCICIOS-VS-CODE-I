@@ -24,7 +24,6 @@
            <fieldset>
                     <fieldset>
                        <legend>Datos personales</legend>
-                       
                        <br>
                        <label for="nombre">Nombre: </label>
                        <input id="nombre" type="text" maxlength="100" name="nombre" 
@@ -35,16 +34,70 @@
                        <input id="apellidos" type="text" maxlength="100" name="apellidos" required>
                        <br>
                        <br>
+                       <label for="dni">DNI: </label>
+                       <input id="dni" type="text" maxlength="10" name="dni" required placeholder="DNI con letra">
+                       <br>
+                       <br>
                     </fieldset>
+                    <p>
+                        <br>
+                    </p>
                     <fieldset>
                         <legend>Datos de su estancia</legend>
+                        <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;
+                            Habitación
+                            <p>
+                            <label for="individual">Individual: </label>
+                            <input type="radio" value="I"
+                            checked id="individual" name="Habitación">
+                            <label for="Doble">Doble: </label>
+                            <input type="radio" value="D"
+                            checked id="doble" name="Habitación">
+                            <label for="Triple">Triple: </label> 
+                            <input type="radio" value="T"
+                            checked id="triple" name="Habitación">
+                            <label for="llevomascotas"></label>&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Llevo mascotas: </label>
+                            <input type="checkbox" name="masc" id="llevomascotas">
+                        </p>
+                        <p>
+                        <!-- Botones de lista desplegable -->
+                         <br>
+                         <label for="nump">Número de personas: </label>
+                         <select name="nump" id="nump">
+                          <option value=" "> </option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>  
+                         </select>
+                         </p>
+                         <p>
+                            <br>
+                            <label for="fechallegada">Fecha de llegada: </label>
+                            <input type="date" name="fecllegada" id="fechallegada"> 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="horallegada">Hora de llegada: </label>
+                            <input type="time" name="horallegada" id="horalledaga">
+                         </p>
+                         <br>
                     </fieldset>
-
-
+                    <p>
+                        <input type="submit" value="Enviar">
+                        &nbsp;&nbsp;&nbsp;<input type="reset" value="reiniciar formulario">    
+                        </p>
 
 
 
           </fieldset>
    </form>
+   <p>
+    <br>
+    <a href="../lmut1pr1/ManchaResorts.html">Volver a la página principal</a> 
+   </p>
 </body>
 </html>

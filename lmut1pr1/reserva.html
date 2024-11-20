@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reserva</title>
+    <style>
+        label{font-family: Arial, Helvetica, sans-serif;
+            color: blueviolet;
+
+        }
+    </style>
 </head>
 <body>
-    <p>Realice su reserva en HOTELES MANCHA RESORTS</p>
+    <center>
+    <p>
+        <h1>Realice su reserva en Hoteles Mancha Resorts</h1>
+    </p>
+    </center>
+    <br>
+    <br>
+    <form action="procesareserva.php"
+    method="get">
+           <fieldset>
+                    <fieldset>
+                       <legend>Datos personales</legend>
+                       
+                       <br>
+                       <label for="nombre">Nombre: </label>
+                       <input id="nombre" type="text" maxlength="100" name="nombre" 
+                       required autofocus>
+                       <br>
+                       <br>
+                       <label for="apellidos">Apellidos: </label>
+                       <input id="apellidos" type="text" maxlength="100" name="apellidos" required>
+                       <br>
+                       <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de su estancia</legend>
+                    </fieldset>
+
+
+
+
+
+          </fieldset>
+   </form>
 </body>
 </html>
